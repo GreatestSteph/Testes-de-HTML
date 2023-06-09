@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="classificados.css" type="text/css"/>
+    <title>Venda um produto</title>
+</head>
+<body>
+    <div class="metade">
+        <div class="logo">   
+            <h1 class="nome">Orizon</h1>
+            <p class="espaço">Seu site de vendas</p>
+        </div>
+        <div class="usuário">   
+            <ul class="lista"> <img class="perfil" src="perfil.png" alt="perfil">
+                <li>(Nome do usuário)</li>
+                <li><a href="pagina2.html">Editar perfil</a></li>
+                <li><a href="paginaclassificados.html">Voltar a página inicial</a></li>
+                <li><input type="button" value="Log out"></li>
+            </ul>
+        </div>
+    </div>
+
+    <br/>
+    <p class="reco">Venda um produto</p>
+
+    <div class="perfiel">
+        <img src="compra.png" style="width: 300px; height: 300px; margin: 5%">
+        <ul class="lista2">
+          <h1>Qual o seu produto?</h1>
+          <li>
+            <label for="Nome">Digite o nome do produto:</label> <br/>
+            <input type="text" id="Nome" size="40" maxlenght="40" required="required"/> <br/>
+          </li>
+          <li>
+            <label for="Escolha">Frete grátis?</label> <br/>
+            <input type="radio" id="Escolha" size="40" maxlenght="40" required="required" name="op" value="1"/>Sim
+            <input type="radio" id="Escolha" size="40" maxlenght="40" required="required" name="op" value="2"/>Não<br/>
+          </li>
+          <li>
+            <label for="Cores">Quais as cores do produto?</label> <br/>
+            <input type="text" id="Cores" size="40" maxlenght="40" required="required"/> <br/>
+          </li>
+          <li>
+            <label for="Descrição">Adicione uma descrição:</label> <br/>
+            <textarea rows="2" cols="40" required="required"></textarea><br/>
+          </li>
+          <li>
+            <label for="Preço">Digite o preço do produto:</label> <br/>
+            <input type="text" id="Preço" size="40" maxlenght="40" required="required"/> <br/>
+          </li>
+          <li>
+            <label for="telefone">Telefone para contato:</label> <br/>
+            <input type="tel" id="telefone" size="40" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(xx)xxxxx-xxxx" required="required"/> <br/>
+          </li>
+          <li>  
+            <label for="email">Digite seu email:</label> <br/>
+            <input type="email" id="email" placeholder="xxxxxxxxx@email.com" size="40" required="required"/> <br/>
+          </li>
+          <li>
+            <input type="reset" name="b2" value="Limpar" onclick="alert('Seus dados foram apagados!')"/>
+            <input type="submit" name="b3" value="Enviar"/>
+          </li>
+          <hr>
+    </div>
+</body>
+</html>

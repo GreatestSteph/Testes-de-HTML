@@ -1,0 +1,5 @@
+.fundo{background-color: rgb(38, 38, 66); color:white;}*{font-family:monospace;}
+.alinha{text-align:center; margin: 0 auto;}
+.bordalista{border:5px double white; background-color: rgb(64, 76, 124); text-align:center; margin: 0 auto;}
+.menu li{display:inline; background-color: rgb(85, 114, 231); color:white; padding-right: 50px;}
+.listadec{list-style-type: lower-roman; list-style-position: inside; text-align:center;}

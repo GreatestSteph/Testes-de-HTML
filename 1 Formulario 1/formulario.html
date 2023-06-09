@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formdecoracao.css" type="text/css"/>
+    <title>Formulário</title>
+</head>
+<body class="fundo">
+    <h1 class="titulo">Multirão do Lixo Eletrônico</h1>
+    <h3 class="texto">Conscientizar a população sobre os danos que o lixo eletrônico pode causar, e possibilitar oportunidade do descarte ambientalmente correto. São os objetivos principais do Mutirão do Lixo Eletrônico.</h3>
+    <h3 class="texto">Para se inscrever e ajudar na coleta de eletrônicos, resposta o forumulário abaixo:</h3>
+    <form>
+        <label for="nome">Digite seu nome:</label> <br/>
+        <input type="text" id="nome" size="40" maxlenght="40" required="required"/> <br/>
+        <label for="email">Digite seu email:</label> <br/>
+        <input type="email" id="email" placeholder="xxxxxxxxx@email.com" size="40" required="required"/> <br/>
+        <label for="cidade">Digite sua cidade:</label> <br/>
+        <input type="text" id="cidade" size="40" maxlenght="40" required="required"/> <br/>
+        <label for="telefone">Digite seu telefone:</label> <br/>
+        <input type="tel" id="telefone" size="30" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(xx)xxxxx-xxxx" required="required"/> <br/>
+        <input type="reset" name="b2" value="Limpar" onclick="alert('Seus dados foram apagados!')"/>
+        <input type="submit" name="b3" value="Enviar"/>
+    </form>
+</body>
+</html>
