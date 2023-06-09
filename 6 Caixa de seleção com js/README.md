@@ -1,2 +1,2 @@
-# Formulario-2
-Aqui estou testando um formulário escolar de html com bootstrap.
+# Caixas de seleções javascript e html
+Aqui estou testando caixas de seleções, baseados em uma despesa escolar, com javascript e html.
