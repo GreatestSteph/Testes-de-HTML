@@ -1,0 +1,17 @@
+@keyframes fundocolorido {
+    /* preciso pesquisar o que significa keyframes*/
+    0% { background-color: red; }
+    /* O fundo começa de cor vermelha, ou seja, 0 */
+    33% { background-color: blue; }
+    /* O fundo vai para a cor azul em 33 */
+    66% { background-color: green; }
+    /* O fundo vai para a cor verde em 66 */
+    100% { background-color: red; }
+    /* O fundo termina na cor vermelha em 100 e repete */
+}
+
+body {
+    animation: fundocolorido 11s linear infinite;
+    /* usa a função changeColor no body, que dura 11s */
+    /* preciso pesquisar o resto */
+}
