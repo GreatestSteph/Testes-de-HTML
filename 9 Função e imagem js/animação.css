@@ -1,0 +1,25 @@
+#corre {
+    overflow: hidden;
+    /* preciso pesquisar o que é overflow */
+  }
+
+  
+#movendo {
+    position: relative;
+    /* preciso pesquisar o que é position e esse relative*/
+    animation: moveImage 8s infinite;
+    /* preciso pesquisar o funcionamento desse, apesar de entender um pouco */
+}
+  
+@keyframes moveImage {
+    /* preciso pesquisar o que seria keyframes */
+    0% { left: 0; }
+    /* preciso pesquisar o que é isso */
+    50% { left: calc(100% - 100px); }
+    /* preciso pesquisar o que é isso */
+    100% { left: 0; }
+    /* preciso pesquisar o que é isso */
+}
+  
+/* chatgpt */
+
