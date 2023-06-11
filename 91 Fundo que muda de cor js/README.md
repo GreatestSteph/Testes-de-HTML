@@ -1,2 +1,2 @@
-# Teste de imagens
-Aqui estou testando como imagens se comportam com determinadas funções js.
+# Teste de fundo
+Aqui estou testando as cores de um fundo
