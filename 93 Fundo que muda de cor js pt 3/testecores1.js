@@ -24,13 +24,20 @@ function m0ut(definacor)
 
 function m0ver2(muda1)
 {
+    muda1.style.backgroundColor = 'red'
+    muda1.style.color = "pink"
     muda1.innerHTML = "Obrigada!"
+    // muda a cor da caixinha para vermelho e seu texto para rosa
     // muda o texto para "Obrigada!" quando passa o mouse
+
 }
 
 function m0ut2(muda2)
 {
+    muda2.style.backgroundColor = 'blue'
+    muda2.style.color = "white"
     muda2.innerHTML = "Tchauu!"
+    // muda a cor da caixinha para azul e seu texto para branco
     // muda o texto para "Tchauu!" quando tira o mouse
 
 }
