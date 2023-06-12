@@ -6,6 +6,7 @@ function m0ver(definacor)
     // muda as letras do documento para branco
     definacor.innerHTML='fundo vermelho e caracteres em branco'
     // muda aquele textinho de passar o mouse para 'fundo vermelho e caracteres em branco'
+    // faz as mudanças ao passar o mouse
 }
 
 function m0ut(definacor)
@@ -16,5 +17,20 @@ function m0ut(definacor)
     // muda as letras do documento para azul
     definacor.innerHTML='fundo amarelo e caracteres azuis'
     // muda aquele textinho de passar o mouse para 'fundo amarelo e caracteres azuis'
+    // faz as mudanças ao passar o mouse
 }
 
+
+
+function m0ver2(muda1)
+{
+    muda1.innerHTML = "Obrigada!"
+    // muda o texto para "Obrigada!" quando passa o mouse
+}
+
+function m0ut2(muda2)
+{
+    muda2.innerHTML = "Tchauu!"
+    // muda o texto para "Tchauu!" quando tira o mouse
+
+}
