@@ -12,3 +12,11 @@ function teste()
     ep[1].textContent = "Modifiquei o conteúdo"
     // mude o texto do segundo elemento "p" para "Modifiquei o conteúdo"
 }
+
+function mudartexto(mudada)
+// função "mudartexto" com o a parâmetro "mudada"
+// obs: parâmetro é um tipo de variável que não sabe sua medição
+{
+    mudada.innerHTML="Ooops!"
+    // "mudada" ganha um innerHTML/conteúdo de texto que é "Ooops!"
+}
