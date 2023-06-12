@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando fundo 3 </title>
     <script type="text/javascript" src="testecores1.js"></script>
+    <style type = "text/css">
+        .modelo1{color:cyan; font-size:35px; font-family: courier}
+        .modelo2{color: yellow; font-size:20px; font-family: georgia}
+    </style>
 </head>
 <body>
 </br>
@@ -16,6 +20,7 @@
     <!-- quando o mouse se afastar "onmouseout" este elemento causará o evento "this" que acionará a função m0ut -->
     <!-- as funções mudam as letras e o fundo de cor, além do próprio texto -->
 
+
 </br>
     <p> Outro texto que muda!</p>
     <!-- texto -->
@@ -26,5 +31,16 @@
     <!-- quando o mouse passar "onmouseover" este elemento causará o evento "this" que acionará a função m0ver2 -->
     <!-- quando o mouse se afastar "onmouseout" este elemento causará o evento "this" que acionará a função m0ut2 -->
     <!-- as funções mudam o texto ao passar o mouse -->
+
+
+</br>
+    <p> Mais outro texto que muda!</p>
+    <!-- texto -->
+    <div onmouseover="m0ver3(this)" onmouseout="m0ut3(this)" style="background-color: green; width: 200px; height: 120px; padding:5px;">
+        Passe o mouse aqui!!
+    </div>
+    <!-- cria um texto em forma de caixinha de cor verde-->
+    <!-- usa a função "m0ver3" que usará a classe de css "modelo1" para mudar as letras, quando o mouse passar em cima "onmouseover". -->
+    <!-- usa a função "m0ut3" que usará a classe de css "modelo2" para mudar as letras, quando o mouse passar em cima "onmouseout". -->
 </body>
 </html>
