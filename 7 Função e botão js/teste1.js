@@ -24,12 +24,24 @@ function sugereNome()
     var pessoas = ["Ana", "Vanessa", "Alessandra", "Goulart", "Danilo"]
     // cria uma variável lista com os nomes Ana, Vanessa, Alessandra, Goulart e Danilo
     let doc = document.querySelector("#texto")
-    // É atribuída um elemento novo a primeira variável texto, 
-    // O elemento adicionado é o: "doc" os nomes aleatorios abaixo, e ele é atribuido através da palavra-chave let.
+    // O documento que possui a id "texto", recebe o que está contido na variável doc.
     doc.textContent = pessoas[(Math.floor(Math.random()*pessoas.length))]
+    // doc.textContent = significa "o conteúdo de texto dentro de doc é = "
     // Math.random() gera um número aleatório decimal entre 0 (inclusivo) e 1 (exclusivo).
     // Math.random() * list.length multiplica o número aleatório pelo comprimento da lista.
     // Math.floor arredonda o número decimal aleatório para baixo, para o número inteiro mais próximo, exemplo, 6,94 seria arredondado para 6.
     // pessoas[(())] usa o número inteiro arredondado como um índice para acessar um elemento na matriz da lista.
     // assim é criado um sorteio :D
+}
+
+function sugereNome2()
+{   
+    var novaspessoas = ["Pedro", "Pablo", "Tiana", "Amanda", "Bianca"]
+    // cria uma variável lista com os nomes Ana, Vanessa, Alessandra, Goulart e Danilo
+    let loc = document.querySelectorAll('.texto')
+    // O documento que possui a classe "texto", recebe o que está contido na variável loc.
+    loc[0].textContent = novaspessoas[(Math.floor(Math.random()*novaspessoas.length))]
+    // Sorteia um nome, no texto que vem primeiro [0]
+    loc[1].textContent = novaspessoas[(Math.floor(Math.random()*novaspessoas.length))]
+    // Sorteia um nome, no texto que vem em segundo [1]
 }
