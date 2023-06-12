@@ -22,6 +22,7 @@ function m0ut(definacor)
 
 
 
+
 function m0ver2(muda1)
 {
     muda1.style.backgroundColor = 'red'
@@ -40,4 +41,19 @@ function m0ut2(muda2)
     // muda a cor da caixinha para azul e seu texto para branco
     // muda o texto para "Tchauu!" quando tira o mouse
 
+}
+
+
+
+
+function m0ver3(usacss1)
+{
+    usacss1.className = 'modelo1';
+    // usa a classe de css "modelo1" para mudar as letras, quando o mouse passar em cima.
+}
+
+function m0ut3(usacss2)
+{
+    usacss2.className = "modelo2"
+    // usa a classe de css "modelo2" para mudar as letras, quando o tirar o mouse.
 }
