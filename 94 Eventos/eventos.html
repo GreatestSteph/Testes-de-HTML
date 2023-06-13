@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de eventos</title>
+    <script>
+        function mensagem2(){
+            alert('oi na seção head!');
+        }
+
+        document.addEventListener('DOMContentLoaded',
+        // precisa esperar o dom pois o dom não carrega na head
+            function(event){
+                var parag = document.querySelector('#frase2')
+                parag.onclick = mensagem;
+            },false
+        )
+        // é a mesma função abaixo
+        
+    </script>
+</head>
+<body>
+    <h1> Teste de Eventos </h1>
+    <p> Na seção head a página ainda não foi renderezida.</p>
+    <p> O Dom deve ser colocado após o body, ou seja, após o carregamento da página. </p>
+    <p id="frase" onclick="mensagem()"> Clique aquiiiii! </p>
+    <!-- onclick chama a função -->
+    <a href="#"> Testando addEventListener 1</a>
+    <a href="#"> Testando addEventListener 2</a>
+
+
+    <p id="frase2" onclick="mensagem2()"> Clique aqui novamente! </p>
+    <!-- onclick chama a função -->
+    <h3></h3>
+
+    <script>
+
+        // click para alerta
+        function mensagem()
+        // função dá a mensagem de alerta "oi"
+            { alert('oi'); }
+        var parag = document.querySelector("#frase");
+        // variável parag pega o elemento na id "frase"
+        parag.onclick = mensagem;
+        // quando clicado no parágrafo, este dará inicio a função mensagem
+
+
+
+        // outro evento
+        var link = document.querySelectorAll("a");
+        // variável link pega todas as tags com "a"
+        for (let taman = 0; taman < link.length; taman++)
+        // variável taman é igual a 0, se o  tamanho da variável taman for menor que a variável link
+        // então é adicionado + a taman
+        {
+            link[taman].addEventListener("click", function() {alert('oi');}, false)
+            // a variável link tem taman como lista
+            // ao clicar, a função é ativada
+            // o false é necessário para que outros elementos obtenham a chamada da função
+            // addEventListener precisa do DOM 
+        }
+    </script>
+
+</body>
+</html>
