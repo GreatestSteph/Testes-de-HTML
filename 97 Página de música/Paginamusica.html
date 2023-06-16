@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="functionsdapagina.js"></script>
+    <link rel="stylesheet" href="estilodapagina.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Página de música</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de banda</h1>
+        <p>Venha ser um artista do nosso novo festival de música, nosso evento terá três semanas de festança neste julho de 2023!</p>
+        <form>
+
+          <!-- Aqui se digita o nome da banda -->
+          <div class="form-group">
+            <label for="nome"> Nome da banda: </label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite o nome da banda" onblur="validabanda(this)">
+          </div>
+
+
+          <!-- Aqui há uma seleção do estilo musical -->
+          <div class="form-group">
+            <label for="estilomusica">Estilo de música:</label>
+            <select class="form-control" id="estilomusica" onchange="escrevernovaopção()">
+              <option>EDM</option>
+              <option>Funk</option>
+              <option>Hip-Hop</option>
+              <option>Kpop</option>
+              <option>MPB</option>
+              <option>Pagode</option>
+              <option>Pop</option>
+              <option>Rap</option>
+              <option>Rock</option>
+              <option>Sertanejo</option>
+              <option value="outro">Outra</option>
+            </select>
+          </div>
+
+
+          <!-- Se você clicar em "outro" um preenchimento escondido se abrirá-->
+          <div class="form-group" id="digitenovo" style="display: none;">
+            <label> Digite seu estilo de música: </label>
+            <input type="text" class="form-control" id="digitenovo" placeholder="Digite seu estilo preferido aqui" onblur="validamusica(this)">
+          </div>
+
+
+          <!-- Aqui há uma seleção do número de integrantes -->
+          <div class="form-group">
+            <label for="integrantes">Número de integrantes:</label>
+            <select class="form-control" id="integrantes" >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>Mais de 10</option>
+            </select>
+          </div>
+
+          <!-- Aqui você coloca o email -->
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Coloque seu email" onblur="validaEmail(this)">
+          </div>
+
+          <!-- Aqui você coloca o telefone -->
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" class="form-control" id="telefone" placeholder="Coloque seu número de telefone" oninput="validatelefone(this)" onblur="validatelefone2(this)">
+          </div>
+
+
+
+          <!-- Aqui vê sua nacionalidade e se necessita de auxilio  -->
+          <div class="form-group">
+            <label for="nacionalidade">Qual a nacionalidade?</label>
+            <div class="form-check">
+              <input type="radio" name="nacionalidade" value="nacional" class="form-check-label" onchange="AuxilioViagem()"> Nacional
+            </br>
+              <input type="radio" name="nacionalidade" value="internacional" class="form-check-label" onchange="AuxilioViagem()"> Internacional
+            </div>
+          </div>
+
+          <div class="form-group" id="auxiliopais" style="display: none;">
+            <label for="auxilio"> Precisa de auxílio para viagem? </label>
+            <div class="form-check">
+              <input type="radio" name="auxilio" value="Sim" class="form-check-label"> Sim
+            </br>
+              <input type="radio" name="auxilio" value="Não" class="form-check-label"> Não
+            </div>
+          </div>
+
+
+
+          <!-- Aqui vê se você é menor de idade e se necessita de acompanhante -->
+          <div class="form-group">
+            <label for="menoridade">Há menores de idade?</label>
+            <div class="form-check">
+              <input type="radio" name="menoridade" value="Sim1" class="form-check-label" id="menorsim" onchange="Acompanhante()"> Sim
+            </br>
+              <input type="radio" name="menoridade" value="Não1" class="form-check-label" id="menornão" onchange="Acompanhante()"> Não
+            </div>
+          </div>
+
+          <div class="form-group" id="acompanhante" style="display: none;">
+            <label>Nome do maior de idade: </label>
+            <input type="text" class="form-control" id="acompanhante" placeholder="Escreva o nome de um acompanhante ou integrante maior de idade" onblur="validanome(this)">
+          </div>
+
+
+
+          <!-- Aqui vê se você é deficiente e se necessita de ajuda -->
+          <div class="form-group">
+            <label for="deficiencia">Possui alguma deficiência?</label>
+            <div class="form-check">
+              <input type="radio" name="deficiencia" value="Sim2" class="form-check-label" id="deficienciasim" onchange="qualdeficienciaEauxilio()"> Sim
+            </br>
+              <input type="radio" name="deficiencia" value="Não2" class="form-check-label" id="deficienciasim" onchange="qualdeficienciaEauxilio()"> Não
+            </div>
+          </div>
+
+          <div class="form-group" id="ajudantedef2" style="display: none;">
+            <label> Quais deficiências? </label>
+            <input type="text" class="form-control" id="ajudantedef2" placeholder="Escreva quais deficiências os integrantes possuem" onblur="deficienciavalida(this)">
+          </div>
+
+          <div class="form-group" id="ajudantedef1" style="display: none;">
+            <label for="ajudante"> Precisa de auxilio ou ajudante? </label>
+            <div class="form-check">
+              <input type="radio" name="ajudante" value="Sim" class="form-check-label"> Sim
+            </br>
+              <input type="radio" name="ajudante" value="Não" class="form-check-label"> Não
+            </div>
+          </div>
+
+
+          <!-- Aqui seleciona o dia da apresentação -->
+          <div class="date">
+            <label for="data"> Qual dia gostaria de se apresentar?</label>
+            <input type="date" id="data" onchange="validadata(this)">
+          </div>
+        </br>
+
+          <!-- Aqui seleciona o horário da apresentação -->
+          <div class="time">
+            <label for="hora"> Qual horário gostaria de se apresentar?</label>
+            <input type="time" id="hora" onchange="validarhorário(this)">
+          </div>
+
+        </br>
+
+          <!-- Botão valida o formulário todo -->
+          <button type="submit" class="btn btn-primary" onclick="validaformulario()"> Enviar</button>
+        </form>
+      </div>
+
+    </br></br></br></br>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+</body>
+<!-- Nome: Stephanie Thawane Cavalcante Madia -->
+<!-- Queria ter feito um botão de versão clara para a página, só para deixar mais chique, mas acabou não dando tempo kkkkk-->
+<!-- Espero que você goste!!-->
+</html>

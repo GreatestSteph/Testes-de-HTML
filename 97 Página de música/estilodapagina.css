@@ -1,0 +1,41 @@
+/* muda o fundo de cor */
+@keyframes fundocolorido {
+    0% { background-color: darkred; }
+    /* O fundo começa de cor vermelha, ou seja, 0 */
+    33% { background-color: darkblue; }
+    /* O fundo vai para a cor azul em 33 */
+    66% { background-color: darkgreen; }
+    /* O fundo vai para a cor verde em 66 */
+    100% { background-color: darkred; }
+    /* O fundo termina na cor vermelha em 100 e repete */
+}
+
+body {
+    animation: fundocolorido 11s linear infinite;
+    /* usa a função changeColor no body, que dura 11s */
+}
+
+
+
+/* coloca uma imagem no fundo */
+body {
+    background-color: darkred;
+    /* cor inicial */
+    background-image: url('fundomusicalpreto.png');
+    /* imagem de fundo, em cima das cores */
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    background-size: 100% 100% 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.container {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
